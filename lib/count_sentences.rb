@@ -2,7 +2,7 @@ require 'pry'
 
 class String
 
-  
+
 #return true if ends in a period
   def sentence?
     self.sentence? == sentence?.end_with?(".")
