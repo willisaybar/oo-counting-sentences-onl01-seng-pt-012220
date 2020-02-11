@@ -9,14 +9,14 @@ class String
   end
 
   def question?
-    self.end_with?(".")
+    self.end_with?("?")
   end
 
   def exclamation?
-
+    self.end_with?("!")
   end
 
   def count_sentences
-
+    self.split(/[.!?]/).reject {|x| x.empty?}.size
   end
 end
